@@ -1,7 +1,7 @@
 const { Kafka } = require("kafkajs");
 const kafka = new Kafka({
   clientId: "twitter",
-  brokers: ["localhost:9092"],
+  brokers: ["192.168.100.10:9092"],
 });
 
 class KafkaSdk {

@@ -12,6 +12,16 @@ target 'twitterFront' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'TcpSockets', :path => '../node_modules/react-native-tcp'
+
+  pod 'RNReactNativeZlib', :path => '../node_modules/@klarna/react-native-zlib'
+
+  pod 'react-native-tcp-socket', :path => '../node_modules/react-native-tcp-socket'
+
   target 'twitterFrontTests' do
     inherit! :complete
     # Pods for testing

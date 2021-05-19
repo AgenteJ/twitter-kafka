@@ -1,3 +1,15 @@
 rootProject.name = 'twitterFront'
+include ':react-native-tcp'
+project(':react-native-tcp').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tcp/android')
+include ':react-native-tcp-socket'
+project(':react-native-tcp-socket').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tcp-socket/android')
+include ':@klarna_react-native-zlib'
+project(':@klarna_react-native-zlib').projectDir = new File(rootProject.projectDir, '../node_modules/@klarna/react-native-zlib/android')
+include ':react-native-tcp'
+project(':react-native-tcp').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tcp/android')
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':react-native-safe-area-context'
+project(':react-native-safe-area-context').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-safe-area-context/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'

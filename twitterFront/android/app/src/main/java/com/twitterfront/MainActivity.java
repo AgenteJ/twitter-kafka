@@ -1,6 +1,7 @@
 package com.twitterfront;
 
 import com.facebook.react.ReactActivity;
+import com.klarna.reactnative.zlib.RNReactNativeZlibPackage;
 
 public class MainActivity extends ReactActivity {
 
@@ -10,6 +11,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
+    new RNReactNativeZlibPackage();
     return "twitterFront";
   }
 }
